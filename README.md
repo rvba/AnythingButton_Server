@@ -9,6 +9,13 @@ Server part of [AnythingButton](https://github.com/juanriopizzella/AnythingButto
 ```bash
 git clone https://github.com/rvba/AnythingButton_Server
 ```
+* Clone the project repo inside AnythingButton_Server
+
+```bash
+cd AnythingButton_Server
+git clone https://github.com/rvba/AnythingButton_Results
+cd ..
+```
 
 * Export your OpenAPI key
 
