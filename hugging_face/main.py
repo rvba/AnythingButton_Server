@@ -1,5 +1,5 @@
 import uvicorn
-from generate import generate
+from generate_deepseek import generate
 from agent import Agent, CodeGenAgent, ValidationAgent, CleanupAgent
 from fastapi import FastAPI
 
@@ -16,5 +16,8 @@ async def generate_text(codeGenAgent: CodeGenAgent):
     validationAgent = ValidationAgent(prompt = codeGenAgent.prompt + "\n" + clean_up_code)
     validation = generate(validationAgent)
 
-    return {"response": clean_up_code + "\n" + validation}
+    if bool(validation):
+        return {"response": clean_up_code}
+    else:
+        return {"response": "Code validation failed. Please try again."}
 

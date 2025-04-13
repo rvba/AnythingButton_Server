@@ -28,3 +28,6 @@ export OPENAI_API_KEY=your_key_here
 ```bash
 make run
 ```
+
+## Alternative to OpenAI Model
+See hugging_face/README.md for details

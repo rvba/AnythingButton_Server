@@ -1,5 +1,5 @@
 ---
-title: Mixtral-8x7b-API
+title: DeepSeekV3-API
 emoji: 📚
 colorFrom: blue
 colorTo: red
@@ -8,6 +8,7 @@ pinned: false
 ---
 
 ### Alternative to Open AI Model
+Use generate for Mixtral-8x7B-Instruct and generate_deepseek DeepSeek-V3. Default to DeepSeek.
 
 ## Usage
 * Huggingface Space - Docker Template - Upload Files
